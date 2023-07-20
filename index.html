@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Lesson 3</title>
+
+</head>
+<body>
+    <header>
+        <div class="title_head">
+            <h1 id="el">Первое знакомство с JavaScript</h1>
+        </div>
+    </header>
+        
+    <div class="bodyoverhead">
+        <h1>Поиграем с кнопками!</h1>
+        <button class="btn" id="btn_id">Нажми меня!</button>
+            <script src="./assets/scripts/script.js">  </script>
+    </div>
+
+
+    <!-- ДОМАШНЕЕ ЗАДАНИЕ -->
+
+    <div class="bodyoverhead">
+        <div class="text_dz">
+            <p id="el_text">Нажмите на кнопку ниже и цвет / текст этого элемента изменится</p>
+        </div>
+        <button class="btn" id="btn_text">Нажимай же!</button>
+        <!-- пришлось перенести скрипты сюда так как не получилось... -->
+        <!-- ... обратиться к script.js как это было в 21 стоке .html -->
+            <script> 
+                let btn_id_text = document.getElementById("btn_text");
+                console.log(btn_id_text);
+                btn_id_text.addEventListener('click', changedColorText);
+                function changedColorText(){
+                    let element_text = document.getElementById("el_text");
+                    console.log(element_text);
+                    element_text.classList.toggle("text");
+                    element_text.textContent = element_text.textContent == "Нажмите на кнопку ниже и цвет / текст этого элемента изменится" ? "ХОБА!" : "Нажмите на кнопку ниже и цвет / текст этого элемента изменится";
+                }
+            </script>
+    </div>
+
+    <div class="bodyoverhead">
+        <div class="text_dz_2">
+            <ul><u><b>Список неотложных дел:</b></u>
+                <li id="el_list1">Сделать ДЗ</li>
+                <li id="el_list2">Покормить ящериц</li>
+                <li id="el_list3">Дорисовать коммишки</li>
+            </ul>
+        </div>
+        <button class="btn" id="btn_list">Давай жми!</button>
+        <!-- пришлось перенести скрипты сюда так как не получилось... -->
+        <!-- ... обратиться к script.js как это было в 21 стоке .html -->
+            <script>
+                let btn_id_list = document.getElementById("btn_list");
+                btn_id_list.addEventListener('click', changedColor_list);
+                function changedColor_list(){
+                    let element_list1 = document.getElementById("el_list1");
+                    element_list1.classList.toggle("list");
+                    let element_list2 = document.getElementById("el_list2");
+                    element_list2.classList.toggle("list");
+                    let element_list3 = document.getElementById("el_list3");
+                    element_list3.classList.toggle("list");
+                }
+            </script>
+    </div>
+
+    <div class="bodyoverhead">
+        <div></div>
+            <p class="text_dz_3"><b>Наведи на меня мышку!</b></p>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
