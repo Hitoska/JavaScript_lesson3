@@ -12,22 +12,22 @@ btn_id_1.addEventListener('click', changedColor);
 
 // // --- ДОМАШНЕЕ ЗАДАНИЕ ---
 
-// // задание 1
-// let name_user = prompt("Введите ваше имя");
-// // alert("Добро пожаловать, " + name_user + "!");
-
-// // задание 2
-// let age_user = prompt("Введите ваш возраст");
-//     if (age_user < 18) {
-//         alert("Контент сайта не подходит для вас. Заходите на свой страх и риск!")
-//     } else if (age_user > 17 && age_user < 25) {
-//         alert("Не забудь перекусить, студент :)")
-//     } else if (age_user > 24 && age_user < 50) {
-//         alert("Вам сюда в самый раз!")
-//     } else if (age_user > 49) {
-//         alert("Похвально быть любознательным в таком возрасте")
-//     }
+// задание 1
+let name_user = prompt("Введите ваше имя");
 // alert("Добро пожаловать, " + name_user + "!");
+
+// задание 2
+let age_user = prompt("Введите ваш возраст");
+     if (age_user < 18) {
+         alert("Контент сайта не подходит для вас. Заходите на свой страх и риск!")
+     } else if (age_user > 17 && age_user < 25) {
+         alert("Не забудь перекусить, студент :)")
+     } else if (age_user > 24 && age_user < 50) {
+         alert("Вам сюда в самый раз!")
+     } else if (age_user > 49) {
+         alert("Похвально быть любознательным в таком возрасте")
+     }
+ alert("Добро пожаловать, " + name_user + "!");
 
 // смена текста и цвета
 // function changedColorText(){
